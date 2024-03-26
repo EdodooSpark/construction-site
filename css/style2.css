@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css?family=Gotham:400,700');
+
+
+
+html,body{
+    overflow-x: hidden;
+    font-family: 'Gotham',sans-serif;
+    color: #01013f;
+    scroll-behavior: smooth;
+    
+
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    scroll-snap-align: center;
+}
+
+/*---NavBar--*/
+
+.navbar{
+    text-transform: Uppercase;
+    font-weight:700;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+   
+     background: gray;
+   color: #fff;
+   opacity: 0.9;
+    padding: 0 35px !important;
+    /*animation magic*/
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    z-index: 9999;
+    top: 0;
+    position: fixed;
+}
+
+.navbar.black{
+   background: rgba(0,0,0,.8);
+   height: 50px;
+   padding: 10px 50px;
+}
+
+.navbar.black .navbar-brand img{
+   height: 3rem;
+   width: 9rem;
+}
+
+.navbar-brand img{
+        height: 4rem;
+        width: 12rem;
+        margin-right: 70%;
+        justify-content: flex-start;
+        display:flex;
+}
+
+h6{
+    color: #01013f;
+}
+
+.navbar-toggler{
+    border: none;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 30px;
+}
+
+
+.navbar-nav li{
+        padding-right: .7rem; 
+        color: whitesmoke;
+        border-bottom-color: white !important;
+}
+
+.navbar-dark .navbar-nav .nav-link{
+    color: whitesmoke !important;
+    padding-top: .8rem;
+}
+
+  #navbarResponsive .active{
+    color: #01013f !important;
+}
+
+
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: black !important;
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover{
+    color: black;
+}
+
+/*---end of navbar----*/
+
+.image-text {
+    color: lightgray;
+    font-size: 20px;
+    margin-bottom: 30px;
+    text-align: center;
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+   width: 100%;
+}
+
+
+.image-text h5{
+    color: lightblue;
+
+
+ /*-----Footer section----*/
+
+#footer{
+   background: #333;
+   color: #fff;
+   padding: 12px;
+}
+
+.fa-heart-o{
+    margin: 3px;
+    color: red;
+    
+}
